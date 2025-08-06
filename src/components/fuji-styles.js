@@ -24,7 +24,7 @@ function FujiStyles() {
                 </div>
 
                 {/* Main Content */}
-                <div className="relative z-10 md:w-1/3 h-full bg-transparent flex flex-col p-4 rounded-lg ">
+                <div className="relative z-10 md:w-1/3 h-screen bg-transparent flex flex-col p-2 rounded-lg overflow-hidden ">
                     {/* Header */}
                     <div className="flex justify-between mb-4">
                         <div className="px-3 py-2 bg-gray-300 text-white font-medium rounded-lg">
@@ -36,7 +36,7 @@ function FujiStyles() {
                     </div>
 
                     {/* Content */}
-                    <div className="flex-grow">
+                    <div className="flex-grow overflow-y-off h-full">
                         <Card />
                     </div>
 
