@@ -29,7 +29,7 @@ export default function Card() {
         ].map((item, idx) => (
           <div
             key={idx}
-            className=" rounded-xl p-2 shadow bg-white text-gray-800 z-10 overflow-y-auto"
+            className=" rounded-xl p-2 shadow bg-white text-gray-800 z-10 overflow-y-auto select-none"
           >
             <div className="text-sm">{item.title}</div>
             <div className="text-[10px] text-gray-500">{item.subtitle}</div>
@@ -37,7 +37,7 @@ export default function Card() {
         ))}
       </div>
 
-     
+
     </div>
   );
 }
