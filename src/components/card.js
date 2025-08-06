@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Card() {
   return (
-    <div className="max-w-md mx-auto rounded-3xl overflow-hidden  bg-gradient-to-br from-gray-100 to-white ">
+    <div className="max-w-md mx-auto rounded-3xl overflow-hidden  ">
       {/* Image */}
       <img
         src="/img/img1.png" // Put your image here
@@ -29,7 +29,7 @@ export default function Card() {
         ].map((item, idx) => (
           <div
             key={idx}
-            className="!bg-white rounded-xl p-2 shadow text-gray-800 z-10"
+            className=" rounded-xl p-2 shadow bg-white text-gray-800 z-10"
           >
             <div className="text-sm">{item.title}</div>
             <div className="text-[10px] text-gray-500">{item.subtitle}</div>

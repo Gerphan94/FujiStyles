@@ -13,43 +13,40 @@ function FujiStyles() {
 
     return (
         <>
-            <div className=" md:w-1/3 h-screen bg-gray-100 flex flex-col flex-grow">
-                <div className="absolute inset-0">
+            <div className="flex justify-center items-center h-screen p-4 bg-gray-200 relative">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
                     <img
                         src="/img/img1.png"
                         alt="Background"
-                        className="md:w-1/3 h-screen object-none opacity-30"
+                        className="w-full h-full object-cover opacity-30"
                     />
                 </div>
 
-                <div className="flex justify-between p-2">
-                    <div className="text-left px-3 py-2 bg-gray-300 text-white font-medium rounded-lg">
-                        {title}</div>
-                    <div className="text-left px-3 py-2 bg-gray-300 text-white font-medium rounded-lg">
-                       FUJI STYLE
+                {/* Main Content */}
+                <div className="relative z-10 md:w-1/3 h-full bg-transparent flex flex-col p-4 rounded-lg ">
+                    {/* Header */}
+                    <div className="flex justify-between mb-4">
+                        <div className="px-3 py-2 bg-gray-300 text-white font-medium rounded-lg">
+                            {title}
+                        </div>
+                        <div className="px-3 py-2 bg-gray-300 text-white font-medium rounded-lg">
+                            FUJI STYLE
+                        </div>
                     </div>
 
+                    {/* Content */}
+                    <div className="flex-grow">
+                        <Card />
+                    </div>
+
+                    {/* Footer */}
+                    <div className="flex justify-between mt-4">
+                        <button className="px-4 py-2 bg-gray-400 text-white rounded">Previous</button>
+                        <button className="px-4 py-2 bg-gray-400 text-white rounded">Next</button>
+                    </div>
                 </div>
-
-                <div className="flex justify-between p-1 h-full ">
-
-                    <Card />
-
-
-                </div>
-                <div className="flex justify-between p-2">
-                    <button>Previous</button>
-                    <button>Next</button>
-
-                </div>
-
-
-
             </div>
-
-
-
-
 
 
         </>
